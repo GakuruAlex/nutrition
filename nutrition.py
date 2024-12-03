@@ -34,9 +34,9 @@ class Nutrition:
         >>> no_of_calories("Apple")
             130
         """
-        return self.fruits[fruit]
+        return self.fruits[fruit.title()]
     def main(self)->None:
-        fruit = input("Item: ").title()
+        fruit = input("Item: ")
         calories = self.no_of_calories(fruit)
         print(f"Calories: {calories}")
 if __name__ == "__main__":
